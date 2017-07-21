@@ -1,17 +1,95 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-    <!--[if lt IE 9]>
-        <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
-    <![endif]-->
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no" />
-<meta name="author" content="vicwang" />
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="工具,笔记," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
 
 
 
@@ -20,70 +98,56 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Sublime Text 3 配置">
 <meta property="og:url" content="http://viccwang.com/2016/03/21/Sublime-Text-3-配置/index.html">
-<meta property="og:site_name" content="Vic Wang">
+<meta property="og:site_name" content="Vic Wang&#39;Blog">
 <meta property="og:description" content="技巧-用户或-User后缀的菜单项，其对应的配置文件都保存在Packages\User文件夹下，将它们上传到Github，便于同步。  最常用的快捷键快捷键完整版见后文，这里只列个人习惯。 四种 Goto ：Ctrl + P 文件定位Ctrl + ; 词语定位 #Ctrl + R 函数定位 @Ctrl + G 行号定位 : 括号前后移动光标：Ctrl + M以单词为单位前后移动光标：Ctrl +">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-07-21T14:49:16.553Z">
+<meta property="og:updated_time" content="2017-07-21T15:34:37.281Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sublime Text 3 配置">
 <meta name="twitter:description" content="技巧-用户或-User后缀的菜单项，其对应的配置文件都保存在Packages\User文件夹下，将它们上传到Github，便于同步。  最常用的快捷键快捷键完整版见后文，这里只列个人习惯。 四种 Goto ：Ctrl + P 文件定位Ctrl + ; 词语定位 #Ctrl + R 函数定位 @Ctrl + G 行号定位 : 括号前后移动光标：Ctrl + M以单词为单位前后移动光标：Ctrl +">
 
-<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
 
-    <link rel="alternate" href="/atom.xml" title="Vic Wang" type="application/atom+xml">
-
-
-
-    <link rel="shortcut icon" href="/favicon.ico">
-
-
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
-
-
-
-    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
-
-
-
-    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/style.css">
-
-
-
-<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-
-<title>Sublime Text 3 配置 | Vic Wang</title>
-
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-<script>
-    var yiliaConfig = {
-        fancybox: true,
-        animate: true,
-        isHome: false,
-        isPost: true,
-        isArchive: false,
-        isTag: false,
-        isCategory: false,
-        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
-        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: undefined
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
+  };
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+  <link rel="canonical" href="http://viccwang.com/2016/03/21/Sublime-Text-3-配置/"/>
 
 
 
-    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+  <title>Sublime Text 3 配置 | Vic Wang'Blog</title>
+  
+
+
+
+
+
+
+
+
 
 
 
@@ -91,215 +155,182 @@
 
 
 </head>
-<body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            <img src="/img/avatar.jpg" class="animated zoomIn">
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">vicwang</a></h1>
-        </hgroup>
 
-        
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-        
+  
+  
+    
+  
 
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
 
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="/">主页</a></li>
-                        
-                            <li><a href="/archives/">所有文章</a></li>
-                        
-                            <li><a href="/tags/">标签云</a></li>
-                        
-                            <li><a href="/about/">关于我</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" href="mailto:m@viccwang.com" title="Email"></a>
-                            
-                                <a class="fa 新浪微博" href="http://weibo.com/viccwang" title="新浪微博"></a>
-                            
-                                <a class="fa GitHub" href="https://github.com/ViccWang" title="GitHub"></a>
-                            
-                                <a class="fa 网易云音乐" href="http://music.163.com/#/user/home?id=49262788" title="网易云音乐"></a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/V社/">V社</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cs/">cs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/文章/">文章</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日志/">日志</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
-                    
-                    </div>
-                </section>
-                
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Vic Wang'Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">long long ago ...</p>
+      
+  </div>
 
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">专注于前端</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>                
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">vicwang</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                <img src="/img/avatar.jpg" class="animated zoomIn">
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">vicwang</a></h1>
-            </hgroup>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
             
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/">主页</a></li>
-                
-                    <li><a href="/archives/">所有文章</a></li>
-                
-                    <li><a href="/tags/">标签云</a></li>
-                
-                    <li><a href="/about/">关于我</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" target="_blank" href="mailto:m@viccwang.com" title="Email"></a>
-                            
-                                <a class="fa 新浪微博" target="_blank" href="http://weibo.com/viccwang" title="新浪微博"></a>
-                            
-                                <a class="fa GitHub" target="_blank" href="https://github.com/ViccWang" title="GitHub"></a>
-                            
-                                <a class="fa 网易云音乐" target="_blank" href="http://music.163.com/#/user/home?id=49262788" title="网易云音乐"></a>
-                            
-                        </ul>
-            </nav>
-        </header>                
-    </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
 </nav>
-      <div class="body-wrap"><article id="post-Sublime-Text-3-配置" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/21/Sublime-Text-3-配置/" class="article-date">
-      <time datetime="2016-03-21T14:31:31.000Z" itemprop="datePublished">2016-03-21</time>
-</a>
 
 
-    </div>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
   
-  <div class="article-inner">
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://viccwang.com/2016/03/21/Sublime-Text-3-配置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vicwang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Vic Wang'Blog">
+    </span>
+
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+      <header class="post-header">
+
         
-  
-    <h1 class="article-title" itemprop="name">
-      Sublime Text 3 配置
-    </h1>
-  
-
-      </header>
-      
-      <div class="article-info article-info-post">
+        
+          <h1 class="post-title" itemprop="name headline">Sublime Text 3 配置</h1>
         
 
-        
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
-    </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-03-21T22:31:31+08:00">
+                2016-03-21
+              </time>
+            
 
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+            
+
+            
+          </span>
+
           
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/03/21/Sublime-Text-3-配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/21/Sublime-Text-3-配置/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         <h2 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h2><p><code>-用户</code>或<code>-User</code>后缀的菜单项，其对应的配置文件都保存在<code>Packages\User</code>文件夹下，将它们上传到Github，便于同步。</p>
 <hr>
 <h2 id="最常用的快捷键"><a href="#最常用的快捷键" class="headerlink" title="最常用的快捷键"></a>最常用的快捷键</h2><p>快捷键完整版见后文，这里只列个人习惯。</p>
@@ -327,30 +358,30 @@
 <hr>
 <h2 id="代码段-Snippet"><a href="#代码段-Snippet" class="headerlink" title="代码段 Snippet"></a>代码段 Snippet</h2><p>单击菜单中的<code>工具</code>，<code>新代码段...</code>，删掉默认内容，粘贴下方代码并保存到<code>Packages\User\Java Snippets</code>文件夹，文件名为<code>Print.sublime-snippet</code>。写Java代码时只须输入<code>syso</code>再按回车就能快速插入<code>System.out.println()</code> 了。（当前Syntax必须为Java，快捷设置方法：按<code>Ctrl+Shift+P</code>，输入<code>SSJA</code>，再按回车）</p>
 <p>后缀必须是<code>.sublime-snippet</code>，文件名可以自由命名，目录结构也可以随意更改，只要在<code>Packages\User\</code>下就行。每个文件中只能写包含一个<code>&lt;snippet&gt;</code>结点</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;snippet&gt;    &lt;!-- 快速补全的内容 --&gt;    &lt;!-- 1表示第一个输入点，1后加冒号和字符表示默认值 --&gt;    &lt;!-- 如System.out.println($&#123;1:&quot;Hello World&quot;&#125;)，可输入多行代码 --&gt;    &lt;content&gt;&lt;![CDATA[System.out.println($&#123;1&#125;);]]&gt;&lt;/content&gt;    &lt;!-- 触发字符 --&gt;    &lt;!-- Eclipse中可以用syso快速插入Java的输出语句 --&gt;    &lt;tabTrigger&gt;syso&lt;/tabTrigger&gt;    &lt;!-- 指定的语法才会触发，可选 --&gt;    &lt;!-- 此处的语法指的是Ctrl+Shift+P，Set Syntax中设置的语法 --&gt;    &lt;!-- 必须把完整的语言名写在后缀中 --&gt;    &lt;scope&gt;source.java&lt;/scope&gt;    &lt;!-- 触发时的提示 --&gt;    &lt;description&gt;System.out.println()&lt;/description&gt;&lt;/snippet&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">snippet</span>&gt;</span> </div><div class="line">	<span class="comment">&lt;!-- 快速补全的内容 --&gt;</span></div><div class="line">	<span class="comment">&lt;!-- 1表示第一个输入点，1后加冒号和字符表示默认值 --&gt;</span></div><div class="line">	<span class="comment">&lt;!-- 如System.out.println($&#123;1:"Hello World"&#125;)，可输入多行代码 --&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">content</span>&gt;</span>&lt;![CDATA[System.out.println($&#123;1&#125;);]]&gt;<span class="tag">&lt;/<span class="name">content</span>&gt;</span></div><div class="line">	</div><div class="line">	<span class="comment">&lt;!-- 触发字符 --&gt;</span></div><div class="line">	<span class="comment">&lt;!-- Eclipse中可以用syso快速插入Java的输出语句 --&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">tabTrigger</span>&gt;</span>syso<span class="tag">&lt;/<span class="name">tabTrigger</span>&gt;</span></div><div class="line">	</div><div class="line">	<span class="comment">&lt;!-- 指定的语法才会触发，可选 --&gt;</span></div><div class="line">	<span class="comment">&lt;!-- 此处的语法指的是Ctrl+Shift+P，Set Syntax中设置的语法 --&gt;</span></div><div class="line">	<span class="comment">&lt;!-- 必须把完整的语言名写在后缀中 --&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">scope</span>&gt;</span>source.java<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></div><div class="line">	</div><div class="line">	<span class="comment">&lt;!-- 触发时的提示 --&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">description</span>&gt;</span>System.out.println()<span class="tag">&lt;/<span class="name">description</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">snippet</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>Sublime Text 3 为每种语法（Syntax）都设置了Snippet。</p>
 <p>查看方法：把Sublime Text 3 根目录下<code>Packages</code>文件夹中任意文件复制出来，改后缀为<code>.rar</code>，解压缩。后缀为<code>.sublime-snippet</code>的就是了。可以用Sublime打开。</p>
 <hr>
 <h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><h3 id="Sublime-Text-设置"><a href="#Sublime-Text-设置" class="headerlink" title="Sublime Text 设置"></a>Sublime Text 设置</h3><p><code>首选项</code>，<code>设置-用户</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;    // 开启选中范围内搜索    &quot;auto_find_in_selection&quot;: true,    // 侧边栏文件夹显示加粗，区别于文件    &quot;bold_folder_labels&quot;: true,    &quot;color_scheme&quot;: &quot;Packages/Color Scheme - Default/Solarized (Dark).tmTheme&quot;,    // 使用 unix 风格的换行符    &quot;default_line_ending&quot;: &quot;unix&quot;,    // 覆盖操作系统设置的DPI，否则标签上的中文显示为方块    &quot;dpi_scale&quot;: 1.0,    // true则禁用Emmet的tab键功能    // &quot;disable_tab_abbreviations&quot;: true,    // 右侧代码预览时给所在区域加上边框    &quot;draw_minimap_border&quot;: true,    // 保证在文件保存时，在结尾插入一个换行符。    // 这样 git 提交时不会生产额外的 diff    &quot;ensure_newline_at_eof_on_save&quot;: true,    // 默认显示行号右侧的代码段闭合展开三角号    &quot;fade_fold_buttons&quot;: false,    &quot;font_face&quot;: &quot;Microsoft YaHei Mono&quot;,    &quot;font_size&quot;: 13,    // 当前行高亮    &quot;highlight_line&quot;: true,    // 高亮未保存文件    &quot;highlight_modified_tabs&quot;: true,    &quot;ignored_packages&quot;:    [        &quot;Vintage&quot;    ],    // 窗口失焦立即保存文件    &quot;save_on_focus_lost&quot;: true,    // 自动移除行尾多余空格    &quot;trim_trailing_white_space_on_save&quot;: true,    &quot;trim_automatic_white_space&quot;: true,    // 关闭自动更新    &quot;update_check&quot;: false,    // 自动换行    &quot;word_wrap&quot;: &quot;true&quot;,    // Tab转空格    &quot;translate_tabs_to_spaces&quot;: true&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  // 开启选中范围内搜索</div><div class="line">  "auto_find_in_selection": true,</div><div class="line">  </div><div class="line">  // 侧边栏文件夹显示加粗，区别于文件</div><div class="line">  "bold_folder_labels": true,</div><div class="line">  </div><div class="line">  "color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",</div><div class="line">  </div><div class="line">  // 使用 unix 风格的换行符</div><div class="line">  "default_line_ending": "unix",</div><div class="line">  </div><div class="line">  // 覆盖操作系统设置的DPI，否则标签上的中文显示为方块</div><div class="line">  "dpi_scale": 1.0,</div><div class="line">  </div><div class="line">  // true则禁用Emmet的tab键功能</div><div class="line">  // "disable_tab_abbreviations": true,</div><div class="line">  </div><div class="line">  // 右侧代码预览时给所在区域加上边框</div><div class="line">  "draw_minimap_border": true,</div><div class="line">  </div><div class="line">  // 保证在文件保存时，在结尾插入一个换行符。</div><div class="line">  // 这样 git 提交时不会生产额外的 diff</div><div class="line">  "ensure_newline_at_eof_on_save": true,</div><div class="line">  </div><div class="line">  // 默认显示行号右侧的代码段闭合展开三角号</div><div class="line">  "fade_fold_buttons": false,</div><div class="line">  </div><div class="line">  "font_face": "Microsoft YaHei Mono",</div><div class="line">  "font_size": 13,</div><div class="line">  </div><div class="line">  // 当前行高亮</div><div class="line">  "highlight_line": true,</div><div class="line">  </div><div class="line">  // 高亮未保存文件</div><div class="line">  "highlight_modified_tabs": true,</div><div class="line">  </div><div class="line">  "ignored_packages":</div><div class="line">  [</div><div class="line">  	"Vintage"</div><div class="line">  ],</div><div class="line">  </div><div class="line">  // 窗口失焦立即保存文件</div><div class="line">  "save_on_focus_lost": true,</div><div class="line">  </div><div class="line">  // 自动移除行尾多余空格</div><div class="line">  "trim_trailing_white_space_on_save": true,</div><div class="line">  "trim_automatic_white_space": true,</div><div class="line">  </div><div class="line">  // 关闭自动更新</div><div class="line">  "update_check": false,</div><div class="line">  </div><div class="line">  // 自动换行</div><div class="line">  "word_wrap": "true",</div><div class="line">  </div><div class="line">  // Tab转空格</div><div class="line">  "translate_tabs_to_spaces": true</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="Anaconda-设置"><a href="#Anaconda-设置" class="headerlink" title="Anaconda 设置"></a>Anaconda 设置</h3><p><code>首选项</code>，<code>插件设置</code>，<code>Anaconda</code>，<code>Settings - User</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;    //忽略各种空格不对, 超过80字, import的函数没有使用的提醒,    &quot;pep8_ignore&quot;: [&quot;E501&quot;, &quot;W292&quot;, &quot;E303&quot;, &quot;W391&quot;, &quot;E225&quot;, &quot;E302&quot;, &quot;W293&quot;, &quot;E402&quot;],    &quot;pyflakes_explicit_ignore&quot;:    [        &quot;UnusedImport&quot;    ],    //保存文件后自动pep8格式化    &quot;auto_formatting&quot;: true,    //库函数的提示    &quot;enable_signatures_tooltip&quot;: true,    &quot;merge_signatures_and_doc&quot;:true,    /*        Set is a false to disable Anaconda Linting totally    */    &quot;anaconda_linting&quot;: false,&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  //忽略各种空格不对, 超过80字, import的函数没有使用的提醒,</div><div class="line">  "pep8_ignore": ["E501", "W292", "E303", "W391", "E225", "E302", "W293", "E402"],</div><div class="line">  "pyflakes_explicit_ignore":</div><div class="line">  [</div><div class="line">  	"UnusedImport"</div><div class="line">  ],</div><div class="line">  //保存文件后自动pep8格式化</div><div class="line">  "auto_formatting": true,</div><div class="line">  //库函数的提示</div><div class="line">  "enable_signatures_tooltip": true,</div><div class="line">  "merge_signatures_and_doc":true,</div><div class="line">  </div><div class="line">  /*</div><div class="line">  Set is a false to disable Anaconda Linting totally</div><div class="line">  */</div><div class="line">  "anaconda_linting": false,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <hr>
 <h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p><code>首选项</code>，<code>按键绑定-用户</code>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[// 代码提示&#123; &quot;keys&quot;: [&quot;alt+space&quot;], &quot;command&quot;: &quot;auto_complete&quot; &#125;,&#123; &quot;keys&quot;: [&quot;alt+space&quot;], &quot;command&quot;: &quot;replace_completion_with_auto_complete&quot;, &quot;context&quot;:  [    &#123; &quot;key&quot;: &quot;last_command&quot;, &quot;operator&quot;: &quot;equal&quot;, &quot;operand&quot;: &quot;insert_best_completion&quot; &#125;,    &#123; &quot;key&quot;: &quot;auto_complete_visible&quot;, &quot;operator&quot;: &quot;equal&quot;, &quot;operand&quot;: false &#125;,    &#123; &quot;key&quot;: &quot;setting.tab_completion&quot;, &quot;operator&quot;: &quot;equal&quot;, &quot;operand&quot;: true &#125;  ]&#125;,// 跳转到函数定义&#123; &quot;keys&quot;: [&quot;ctrl+alt+d&quot;], &quot;command&quot;: &quot;goto_definition&quot; &#125;,]</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">// 代码提示</div><div class="line">&#123; "keys": ["alt+space"], "command": "auto_complete" &#125;,</div><div class="line">&#123; "keys": ["alt+space"], "command": "replace_completion_with_auto_complete", "context":</div><div class="line">  [</div><div class="line">  	&#123; "key": "last_command", "operator": "equal", "operand": "insert_best_completion" &#125;,</div><div class="line">  	&#123; "key": "auto_complete_visible", "operator": "equal", "operand": false &#125;,</div><div class="line">  	&#123; "key": "setting.tab_completion", "operator": "equal", "operand": true &#125;</div><div class="line">  ]</div><div class="line">&#125;,</div><div class="line">// 跳转到函数定义</div><div class="line">&#123; "keys": ["ctrl+alt+d"], "command": "goto_definition" &#125;,</div><div class="line">]</div></pre></td></tr></table></figure>
 <hr>
 <h2 id="编译系统"><a href="#编译系统" class="headerlink" title="编译系统"></a>编译系统</h2><hr>
 <h3 id="编译运行Java"><a href="#编译运行Java" class="headerlink" title="编译运行Java"></a>编译运行Java</h3><p>Sublime Text 3默认将文件存为UTF-8编码，如果要手动输命令编译Sublime Text 3 写的Java源文件，必须加<code>-encoding UTF-8</code>参数</p>
 <h4 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h4><p>打开Sublime Text 3，依次点击<code>工具</code>、<code>编译系统</code>、<code>新编译系统</code>，粘贴下面的代码并保存为<code>My-----Java.sublime-build</code>。文件名加这么多斜杠是为了能在菜单中一眼找出来。</p>
 <p>然后按Ctrl+Shift+P，输入<code>My---</code>，选择<code>Build With:My-----Java</code>并回车，即可将刚才的文件设置为当前编译系统。Ctrl+B编译，Ctrl+Shift+B运行。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;       // 命令和参数，未指定路径则在PATH环境变量中找    &quot;cmd&quot;: [&quot;javac&quot;,&quot;-encoding&quot;,&quot;UTF-8&quot;,&quot;-d&quot;,&quot;.&quot;,&quot;$file&quot;],      // 可选。获取cmd的错误输出    &quot;file_regex&quot;: &quot;^(...*?):([0-9]*):?([0-9]*)&quot;,      // 可选。`工具`菜单中`编译`为`自动`时生效    &quot;selector&quot;: &quot;source.java&quot;,      // 可选。输出&quot;cmd&quot;的编码。必须是合法的Python编码，缺省为&quot;UTF-8&quot;    &quot;encoding&quot;:&quot;GBK&quot;,      // variants 可选。用来替代主构建系统的备选。如果构建系统的&quot;selector&quot;与激活的文件匹配，变量&quot;name&quot;则会出现在 Command Palette 中。    &quot;variants&quot;:          [              &#123;                   // 仅在&quot;variants&quot;中是合法的 (详见 variants)。用来标识系统中不同的构建系统。如果&quot;name&quot;是&quot;Run&quot; ,则会显示在Tools | Build System 菜单下，并且可以使用Ctrl + Shift + B调用                &quot;name&quot;: &quot;Run&quot;,                  // 可选。如果该选项为&quot;true&quot; ，&quot;cmd&quot;则可以通过shell运行。                &quot;shell&quot;: true,                  &quot;cmd&quot; :  [&quot;start&quot;,&quot;cmd&quot;,&quot;/c&quot;, &quot;java $&#123;file_base_name&#125; &amp;echo. &amp; pause&quot;],                  // /c是执行完命令后关闭cmd窗口,                  // /k是执行完命令后不关闭cmd窗口。                  // echo. 相当于输入一个回车                  // pause命令使cmd窗口按任意键后才关闭                  // 可选。在运行首行的&quot;cmd&quot;前会切换到该目录。运行结束后会切换到原来的目录。                &quot;working_dir&quot;: &quot;$&#123;file_path&#125;&quot;,                  &quot;encoding&quot;:&quot;GBK&quot;              &#125;          ]      // 还有：    // line_regex 可选。当&quot;cmd&quot;的错误输出中，file_regex与该行不匹配，如果line_regex存在，并且确实与当前行匹配， 则遍历整个缓冲区，直到与file regex匹配的行出现，并用这两个匹配决定最终要跳转的文件或行。    // target 可选。运行的Sublime Text命令，缺省为&quot;exec&quot; (Packages/Default/exec.py)。该命令从 .build-system中获取配置数据。用来替代缺省的构建系统命令。注意，如果你希望替代构建系统的缺省命令，请在.sublime-build 文件中专门设置。    // env 可选。在环境变量被传递给&quot;cmd&quot;前，将他们封装成词典。    // path 可选。该选项可以在调用&quot;cmd&quot;前替换当前进程的PATH 。原来的 PATH 将在运行后恢复。使用这个选项可以在不修改系统设置的前提下将目录添加到 PATH 中。&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	// 命令和参数，未指定路径则在PATH环境变量中找</div><div class="line">	&quot;cmd&quot;: [&quot;javac&quot;,&quot;-encoding&quot;,&quot;UTF-8&quot;,&quot;-d&quot;,&quot;.&quot;,&quot;$file&quot;],</div><div class="line">	</div><div class="line">	// 可选。获取cmd的错误输出</div><div class="line">	&quot;file_regex&quot;: &quot;^(...*?):([0-9]*):?([0-9]*)&quot;,</div><div class="line">	</div><div class="line">	// 可选。`工具`菜单中`编译`为`自动`时生效</div><div class="line">	&quot;selector&quot;: &quot;source.java&quot;,</div><div class="line">	</div><div class="line">	// 可选。输出&quot;cmd&quot;的编码。必须是合法的Python编码，缺省为&quot;UTF-8&quot;</div><div class="line">	&quot;encoding&quot;:&quot;GBK&quot;,</div><div class="line">	</div><div class="line">	// variants 可选。用来替代主构建系统的备选。如果构建系统的&quot;selector&quot;与激活的文件匹配，变量&quot;name&quot;则会出现在 Command Palette 中。</div><div class="line">	&quot;variants&quot;:</div><div class="line">		[</div><div class="line">			&#123;</div><div class="line">				// 仅在&quot;variants&quot;中是合法的 (详见 variants)。用来标识系统中不同的构建系统。如果&quot;name&quot;是&quot;Run&quot; ,则会显示在Tools | Build System 菜单下，并且可以使用Ctrl + Shift + B调用</div><div class="line">				&quot;name&quot;: &quot;Run&quot;,</div><div class="line">				</div><div class="line">				// 可选。如果该选项为&quot;true&quot; ，&quot;cmd&quot;则可以通过shell运行。</div><div class="line">				&quot;shell&quot;: true,</div><div class="line">				</div><div class="line">				&quot;cmd&quot; :  [&quot;start&quot;,&quot;cmd&quot;,&quot;/c&quot;, &quot;java $&#123;file_base_name&#125; &amp;echo. &amp; pause&quot;],</div><div class="line">				// /c是执行完命令后关闭cmd窗口,</div><div class="line">				// /k是执行完命令后不关闭cmd窗口。</div><div class="line">				// echo. 相当于输入一个回车</div><div class="line">				// pause命令使cmd窗口按任意键后才关闭</div><div class="line">				</div><div class="line">				// 可选。在运行首行的&quot;cmd&quot;前会切换到该目录。运行结束后会切换到原来的目录。</div><div class="line">				&quot;working_dir&quot;: &quot;$&#123;file_path&#125;&quot;,</div><div class="line">				</div><div class="line">				&quot;encoding&quot;:&quot;GBK&quot;</div><div class="line">				&#125;</div><div class="line">			]</div><div class="line">		// 还有：</div><div class="line">		// line_regex 可选。当&quot;cmd&quot;的错误输出中，file_regex与该行不匹配，如果line_regex存在，并且确实与当前行匹配， 则遍历整个缓冲区，直到与file regex匹配的行出现，并用这两个匹配决定最终要跳转的文件或行。</div><div class="line">		// target 可选。运行的Sublime Text命令，缺省为&quot;exec&quot; (Packages/Default/exec.py)。该命令从 .build-system中获取配置数据。用来替代缺省的构建系统命令。注意，如果你希望替代构建系统的缺省命令，请在.sublime-build 文件中专门设置。</div><div class="line">		// env 可选。在环境变量被传递给&quot;cmd&quot;前，将他们封装成词典。</div><div class="line">		// path 可选。该选项可以在调用&quot;cmd&quot;前替换当前进程的PATH 。原来的 PATH 将在运行后恢复。使用这个选项可以在不修改系统设置的前提下将目录添加到 PATH 中。</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h4><p>在JDK的bin目录下新建<code>runJava.bat</code>文件：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@echo off  cd %~dp1  echo Compiling %~nx1......  if exist %~n1.class (      del %~n1.class  )  javac -encoding UTF-8 %~nx1  if exist %~n1.class (      echo ------Output------      java %~n1  )</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@echo</span> off</div><div class="line">cd %~dp1</div><div class="line">echo Compiling %~nx1......</div><div class="line"><span class="keyword">if</span> exist %~n1.class (</div><div class="line">	del %~n1.class  </div><div class="line">)</div><div class="line">javac -encoding UTF-<span class="number">8</span> %~nx1</div><div class="line"><span class="keyword">if</span> exist %~n1.class (</div><div class="line">	echo ------Output------</div><div class="line">	java %~n1</div><div class="line">)</div></pre></td></tr></table></figure>
 <p>用上面的方法新建并设置为当前编译系统，按Ctrl+B即可编译+运行，这种方法的缺点是无法在控制台输入，如果程序需要输入内容，则直接报错</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;   &quot;shell_cmd&quot;: &quot;runJava.bat \&quot;$file\&quot;&quot;,   &quot;file_regex&quot;: &quot;^(...*?):([0-9]*):?([0-9]*)&quot;,   &quot;selector&quot;: &quot;source.java&quot;,   &quot;encoding&quot;: &quot;GBK&quot;  &#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line"><span class="string">"shell_cmd"</span>: <span class="string">"runJava.bat \"$file\""</span>,</div><div class="line"><span class="string">"file_regex"</span>: <span class="string">"^(...*?):([0-9]*):?([0-9]*)"</span>,</div><div class="line"><span class="string">"selector"</span>: <span class="string">"source.java"</span>,</div><div class="line"><span class="string">"encoding"</span>: <span class="string">"GBK"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <hr>
 <h3 id="运行-Python"><a href="#运行-Python" class="headerlink" title="运行 Python"></a>运行 Python</h3><p>用法同上，仅粘贴代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;    &quot;shell_cmd&quot;: &quot;python -u \&quot;$file\&quot;&quot;,    &quot;file_regex&quot;: &quot;^[ ]*File \&quot;(...*?)\&quot;, line ([0-9]*)&quot;,    &quot;selector&quot;: &quot;source.python&quot;,    // 默认是utf-8，控制台无法输出中文。    // Window Code Page 936，指的是GBK编码    &quot;encoding&quot;:&quot;cp936&quot;&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="string">"shell_cmd"</span>: <span class="string">"python -u \"$file\""</span>,</div><div class="line">	<span class="string">"file_regex"</span>: <span class="string">"^[ ]*File \"(...*?)\", line ([0-9]*)"</span>,</div><div class="line">	<span class="string">"selector"</span>: <span class="string">"source.python"</span>,</div><div class="line">	</div><div class="line">	<span class="comment">// 默认是utf-8，控制台无法输出中文。</span></div><div class="line">	<span class="comment">// Window Code Page 936，指的是GBK编码</span></div><div class="line">	<span class="string">"encoding"</span>:<span class="string">"cp936"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <hr>
 <h2 id="快捷键汇总"><a href="#快捷键汇总" class="headerlink" title="快捷键汇总"></a>快捷键汇总</h2><h3 id="选择类"><a href="#选择类" class="headerlink" title="选择类"></a>选择类</h3><blockquote>
 <ul>
@@ -444,185 +475,402 @@
 
       
     </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/工具/" rel="tag"># 工具</a>
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/11/03/沉默的人/" rel="next" title="沉默的人">
+                <i class="fa fa-chevron-left"></i> 沉默的人
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/13/《反恐精英》简史/" rel="prev" title="《反恐精英》简史">
+                《反恐精英》简史 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/03/21/Sublime-Text-3-配置/"
+           data-title="Sublime Text 3 配置" data-url="http://viccwang.com/2016/03/21/Sublime-Text-3-配置/">
+      </div>
     
   </div>
-  
-    
 
 
-    <nav id="article-nav">
-        
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2017/02/13/《反恐精英》简史/">
-                    《反恐精英》简史
-                </a>
-            </div>
-        
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/2014/11/03/沉默的人/">
-                    沉默的人
-                </a>
-            </div>
-        
-    </nav>
-
-  
-</article>
-
-    <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目录</strong>
-        
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#技巧"><span class="toc-number">1.</span> <span class="toc-text">技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最常用的快捷键"><span class="toc-number">2.</span> <span class="toc-text">最常用的快捷键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#插件"><span class="toc-number">3.</span> <span class="toc-text">插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码段-Snippet"><span class="toc-number">4.</span> <span class="toc-text">代码段 Snippet</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置"><span class="toc-number">5.</span> <span class="toc-text">设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Sublime-Text-设置"><span class="toc-number">5.1.</span> <span class="toc-text">Sublime Text 设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Anaconda-设置"><span class="toc-number">5.2.</span> <span class="toc-text">Anaconda 设置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#快捷键"><span class="toc-number">6.</span> <span class="toc-text">快捷键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编译系统"><span class="toc-number">7.</span> <span class="toc-text">编译系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#编译运行Java"><span class="toc-number">7.1.</span> <span class="toc-text">编译运行Java</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一："><span class="toc-number">7.1.1.</span> <span class="toc-text">方法一：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方法二："><span class="toc-number">7.1.2.</span> <span class="toc-text">方法二：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运行-Python"><span class="toc-number">7.2.</span> <span class="toc-text">运行 Python</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#快捷键汇总"><span class="toc-number">8.</span> <span class="toc-text">快捷键汇总</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#选择类"><span class="toc-number">8.1.</span> <span class="toc-text">选择类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编辑类"><span class="toc-number">8.2.</span> <span class="toc-text">编辑类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搜索类"><span class="toc-number">8.3.</span> <span class="toc-text">搜索类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#显示类"><span class="toc-number">8.4.</span> <span class="toc-text">显示类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#多重选择（Multi-Selection）"><span class="toc-number">8.5.</span> <span class="toc-text">多重选择（Multi-Selection）</span></a></li></ol></li></ol>
-        
-    </div>
-    <style>
-        .left-col .switch-btn,
-        .left-col .switch-area {
-            display: none;
-        }
-        .toc-level-3 i,
-        .toc-level-3 ol {
-            display: none !important;
-        }
-    </style>
-
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
-
-    <script>
-        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
-    </script>
-
-
-
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
-        </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Sublime Text 3 配置　| Vic Wang　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
-
-    
-</div>
-
-
-
-
-
-
-
-    
-
-
-
-
-    <div class="scroll" id="post-nav-button">
-        
-            <a href="/2017/02/13/《反恐精英》简史/" title="上一篇: 《反恐精英》简史">
-                <i class="fa fa-angle-left"></i>
-            </a>
-        
-
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-
-        
-            <a href="/2014/11/03/沉默的人/" title="下一篇: 沉默的人">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        
-    </div>
-
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/02/13/《反恐精英》简史/">《反恐精英》简史</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/21/Sublime-Text-3-配置/">Sublime Text 3 配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2014/11/03/沉默的人/">沉默的人</a></li><li class="post-list-item"><a class="post-list-link" href="/2013/12/31/真漫长的一年/">真漫长的一年</a></li></ul>
-
-
-
-
-    <script>
-        
-    </script>
-</div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                <i class="fa fa-copyright"></i> 
-                2013-2017 vicwang
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
-            </div>
         </div>
         
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>| </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
-        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
-</footer>
-    </div>
-    
-    <script src="/js/GithubRepoWidget.js"></script>
-
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
-
-
-
-
-
-<div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
-</div>
-<script>
-    // Open in New Window
-    
-        var oOpenInNew = {
-             github: ".github-widget a", 
-            
-            
-            
-            
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
-        }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
-    
-</script>
-
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
   </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="vicwang" />
+          <p class="site-author-name" itemprop="name">vicwang</p>
+           
+              <p class="site-description motion-element" itemprop="description">vic</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/ViccWang" target="_blank" title="Github">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  Github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/viccwang" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#技巧"><span class="nav-number">1.</span> <span class="nav-text">技巧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最常用的快捷键"><span class="nav-number">2.</span> <span class="nav-text">最常用的快捷键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件"><span class="nav-number">3.</span> <span class="nav-text">插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码段-Snippet"><span class="nav-number">4.</span> <span class="nav-text">代码段 Snippet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置"><span class="nav-number">5.</span> <span class="nav-text">设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Sublime-Text-设置"><span class="nav-number">5.1.</span> <span class="nav-text">Sublime Text 设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Anaconda-设置"><span class="nav-number">5.2.</span> <span class="nav-text">Anaconda 设置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷键"><span class="nav-number">6.</span> <span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译系统"><span class="nav-number">7.</span> <span class="nav-text">编译系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#编译运行Java"><span class="nav-number">7.1.</span> <span class="nav-text">编译运行Java</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方法一："><span class="nav-number">7.1.1.</span> <span class="nav-text">方法一：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法二："><span class="nav-number">7.1.2.</span> <span class="nav-text">方法二：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行-Python"><span class="nav-number">7.2.</span> <span class="nav-text">运行 Python</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷键汇总"><span class="nav-number">8.</span> <span class="nav-text">快捷键汇总</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择类"><span class="nav-number">8.1.</span> <span class="nav-text">选择类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑类"><span class="nav-number">8.2.</span> <span class="nav-text">编辑类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索类"><span class="nav-number">8.3.</span> <span class="nav-text">搜索类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示类"><span class="nav-number">8.4.</span> <span class="nav-text">显示类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多重选择（Multi-Selection）"><span class="nav-number">8.5.</span> <span class="nav-text">多重选择（Multi-Selection）</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2013 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">vicwang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"vicwang"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.1"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
